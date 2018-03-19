@@ -1,4 +1,3 @@
-package Clases;
 
 import Clases.*;
 
@@ -22,6 +21,7 @@ public class Main {
         venta venta3 = new venta();
 
         //prueba de commit//
+        System.out.print("Prueba Exitosa");
 
 
     }
