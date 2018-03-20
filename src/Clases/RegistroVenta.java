@@ -12,10 +12,12 @@ public class RegistroVenta {
         this.listaVentas.add(v);
     }
 
-    public double gananciasDiarias(){
+    public double gananciasDiarias(String dia){
         this.ventasDiarias = 0;
         for (venta vent:listaVentas){
-            this.ventasDiarias += vent.getGanancias();
+            if (vent.getFecha() == dia) {
+                this.ventasDiarias += vent.getGanancias();
+            }
         }
         return(ventasDiarias);
     }

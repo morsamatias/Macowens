@@ -4,19 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class venta {
-    private int fecha;
+    private String fecha;
     private double ganancias;
     private tipoDePago tp;
     private int cuotas;
     private List<item> listaItems = new ArrayList<item>();
 
-    public void setFecha(int fecha){
+    public void setFecha(String fecha){
         this.fecha = fecha;
     }
 
     public void agregarItem(item it){
         this.listaItems.add(it);
     }
+
+    public String getFecha(){ return this.fecha;}
 
     public List<item> devolverLista(){
         return (listaItems);
